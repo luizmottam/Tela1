@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Agendamento"
+        android:text="@string/agendamento"
         android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:text="Tipo de Lavagem"
+        android:text="@string/tipo_de_lavagem"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +57,7 @@
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline">
@@ -70,7 +70,8 @@
             android:layout_marginEnd="32dp"
             android:layout_weight="1"
             android:inputType="none"
-            android:text="Selecione um tipo" />
+            android:text="@string/selecione_um_tipo"
+            tools:ignore="LabelFor" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -87,7 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:text="Tamanho do Carro"
+        android:text="@string/tamanho_do_carro"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,7 +99,7 @@
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2">
@@ -111,7 +112,8 @@
             android:layout_marginEnd="32dp"
             android:layout_weight="1"
             android:inputType="none"
-            android:text="Selecione um tipo" />
+            android:text="@string/selecione_um_tipo"
+            tools:ignore="LabelFor" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -127,7 +129,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:text="Horário"
+        android:text="@string/hor_rio"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -137,41 +139,43 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="140dp"
-        android:text="Data"
+        android:layout_marginEnd="170dp"
+        android:text="@string/data"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="166dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="25dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3">
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:startIconDrawable="@drawable/baseline_access_time_filled_24">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="140dp"
+            android:layout_width="130dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="15dp"
-            android:hint="00:00" />
+            android:inputType="none"
+            android:text="@string/_00_00" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="166dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginTop="25dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3">
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:startIconDrawable="@drawable/baseline_calendar_month_24">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:hint="dd/mm/aa" />
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:text="@string/dd_mm_aa" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.constraintlayout.widget.Guideline
@@ -187,32 +191,74 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Localização"
+        android:text="@string/localiza_o"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline">
+        app:layout_constraintTop_toTopOf="@+id/guideline4">
 
         <AutoCompleteTextView
-            android:id="@+id/auto_complete_txt_lavagem"
+            android:id="@+id/auto_complete_txt_localizacao"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_weight="1"
             android:inputType="none"
-            android:text="Selecione um tipo" />
+            android:text="@string/selecione_o_lava_jato"
+            tools:ignore="LabelFor" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="533dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/total_previsto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#000000"
+        android:text="@string/avan_ar"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/r_00_00"
+        android:textSize="55sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

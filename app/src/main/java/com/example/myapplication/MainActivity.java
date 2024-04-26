@@ -14,16 +14,11 @@ public class MainActivity extends AppCompatActivity {
     String[] itemLavagem = {"Lavagem Tradicional", "Lavagem Detalhada", "Lavagem a Seco", "Lavagem a Vapor"};
     String[] itemCarro = {"Sedan", "Picap", "Cupê", "SUV", "Crossover", "Mini Van", "Hatch","Station Wagon"};
 
-    String[] itemLocalizacao = {"Edifício Barraca Armada"};
-
     AutoCompleteTextView autoCompleteTextViewLavagem;
     AutoCompleteTextView autoCompleteTextViewCarro;
-    AutoCompleteTextView autoCompleteTextViewLocalizacao;
 
     ArrayAdapter<String> adapterItemsLavagem;
     ArrayAdapter<String> adapterItemsCarro;
-    ArrayAdapter<String> adapterItemsLocalizacao;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

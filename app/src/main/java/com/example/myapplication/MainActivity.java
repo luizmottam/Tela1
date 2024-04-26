@@ -31,15 +31,12 @@ public class MainActivity extends AppCompatActivity {
 
         autoCompleteTextViewLavagem = findViewById(R.id.auto_complete_txt_lavagem);
         autoCompleteTextViewCarro = findViewById(R.id.auto_complete_txt_carro);
-        autoCompleteTextViewLocalizacao = findViewById(R.id.auto_complete_txt_localizacao);
 
         adapterItemsLavagem = new ArrayAdapter<String>(this, R.layout.list_item, itemLavagem);
         adapterItemsCarro = new ArrayAdapter<String>(this, R.layout.list_item, itemCarro);
-        adapterItemsLocalizacao = new ArrayAdapter<String>(this, R.layout.list_item, itemLocalizacao);
 
         autoCompleteTextViewLavagem.setAdapter(adapterItemsLavagem);
         autoCompleteTextViewCarro.setAdapter(adapterItemsCarro);
-        autoCompleteTextViewLocalizacao.setAdapter(adapterItemsLocalizacao);
 
         autoCompleteTextViewLavagem.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -54,14 +51,6 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 String item = adapterView.getItemAtPosition(position).toString();
                 Toast.makeText(MainActivity.this, "Item Carro: " + item, Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        autoCompleteTextViewLocalizacao.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                String item = adapterView.getItemAtPosition(position).toString();
-                Toast.makeText(MainActivity.this, "Item Local: " + item, Toast.LENGTH_SHORT).show();
             }
         });
     }

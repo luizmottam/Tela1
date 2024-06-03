@@ -147,37 +147,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
+    <Button
+        android:id="@+id/btnTimePicker"
+        android:layout_width="130dp"
+        android:layout_height="62dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="26dp"
+        android:drawableLeft="@drawable/baseline_access_time_filled_24"
+        android:text="00:00"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:startIconDrawable="@drawable/baseline_access_time_filled_24">
+        app:strokeWidth="1dp" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="130dp"
-            android:layout_height="match_parent"
-            android:inputType="none"
-            android:text="@string/_00_00" />
-    </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginTop="25dp"
+    <Button
+        android:id="@+id/btnDataPicker"
+        android:layout_width="168dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="26dp"
         android:layout_marginEnd="32dp"
+        android:drawableLeft="@drawable/baseline_calendar_month_24"
+        android:text="dd/mm/aa"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:startIconDrawable="@drawable/baseline_calendar_month_24">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="155dp"
-            android:layout_height="match_parent"
-            android:inputType="none"
-            android:text="@string/dd_mm_aa" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:strokeWidth="1dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"

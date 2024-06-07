@@ -57,7 +57,8 @@ A interface do aplicativo é composta pelos seguintes elementos:
 - **Texto**: Exibe o total previsto para o serviço.
 - **Botão**: "Avançar" para confirmar e prosseguir com o agendamento.
 
-![Interface do Aplicativo](image.png)
+https://github.com/luizmottam/pi-pdm/assets/95381902/87b32293-b655-4e31-be1e-64116b688b67
+
 
 ## Configuração do Ambiente de Desenvolvimento
 

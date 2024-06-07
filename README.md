@@ -66,7 +66,7 @@ Para configurar o ambiente de desenvolvimento, siga os passos abaixo:
 
 1. **Clone o repositório**:
    ```bash
-   git clone <URL do repositório>
+   git clone (https://github.com/luizmottam/pi-pdm/)
    ```
 
 2. **Importe o projeto no Android Studio**:
